@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>My Photo Collage</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <main class="collage">
+
+        <!-- YOUR ILLUSTRATION -->
+
+        <img
+            src="images/background.jpg"
+            class="background"
+            alt=""
+        >
+
+
+        <!-- POLAROID 1 -->
+
+        <button
+            class="polaroid polaroid-1"
+            data-image="images/photo1.jpg"
+        >
+            <img
+                src="images/photo1.jpg"
+                alt="Photo 1"
+            >
+        </button>
+
+
+        <!-- POLAROID 2 -->
+
+        <button
+            class="polaroid polaroid-2"
+            data-image="images/photo2.jpg"
+        >
+            <img
+                src="images/photo2.jpg"
+                alt="Photo 2"
+            >
+        </button>
+
+
+        <!-- POLAROID 3 -->
+
+        <button
+            class="polaroid polaroid-3"
+            data-image="images/photo3.jpg"
+        >
+            <img
+                src="images/photo3.jpg"
+                alt="Photo 3"
+            >
+        </button>
+
+
+        <!-- POLAROID 4 -->
+
+        <button
+            class="polaroid polaroid-4"
+            data-image="images/photo4.jpg"
+        >
+            <img
+                src="images/photo4.jpg"
+                alt="Photo 4"
+            >
+        </button>
+
+    </main>
+
+
+    <!-- FULLSCREEN PHOTO -->
+
+    <div
+        class="lightbox"
+        id="lightbox"
+    >
+
+        <button
+            class="close"
+            id="close"
+        >
+            ×
+        </button>
+
+        <img
+            id="largePhoto"
+            src=""
+            alt=""
+        >
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
