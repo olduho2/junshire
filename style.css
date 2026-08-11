@@ -174,7 +174,8 @@ body {
     inset: 0;
 
     background: #faf9f2;
-    padding: 4%;
+
+    padding: 4% 4% 10%;
 
     box-shadow: 0 25px 60px rgba(0,0,0,.5);
 
