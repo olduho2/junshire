@@ -215,39 +215,6 @@ body {
 
 
 /* =========================================
-   FLIP BUTTON
-========================================= */
-
-.flip-button {
-    position: fixed;
-    bottom: 30px;
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    padding: 12px 25px;
-
-    border: none;
-    border-radius: 30px;
-
-    background: rgba(255,255,255,.95);
-    color: #111;
-
-    font-size: 16px;
-    cursor: pointer;
-
-    z-index: 10001;
-
-    box-shadow:
-        0 5px 15px rgba(0,0,0,.25);
-}
-
-.flip-button:hover {
-    background: white;
-}
-
-
-/* =========================================
    CLOSE BUTTON
 ========================================= */
 
