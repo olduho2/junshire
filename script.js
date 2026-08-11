@@ -1,3 +1,5 @@
+console.log("SCRIPT IS WORKING");
+
 const polaroids = document.querySelectorAll(".polaroid");
 const lightbox = document.getElementById("lightbox");
 const largePhoto = document.getElementById("largePhoto");
@@ -7,13 +9,13 @@ const flipButton = document.getElementById("flip");
 const flipCard = document.getElementById("flipCard");
 
 
-/* =========================================
-   OPEN PHOTO
-========================================= */
+/* OPEN PHOTO */
 
 polaroids.forEach(function(polaroid) {
 
-    polaroid.addEventListener("click", function() {
+    polaroid.addEventListener("click", function(event) {
+
+        event.preventDefault();
 
         const image = polaroid.dataset.image;
         const backImage = polaroid.dataset.back;
@@ -21,7 +23,6 @@ polaroids.forEach(function(polaroid) {
         largePhoto.src = image;
         backPhoto.src = backImage;
 
-        /* Always start on front */
         flipCard.classList.remove("flipped");
 
         lightbox.classList.add("open");
@@ -33,9 +34,7 @@ polaroids.forEach(function(polaroid) {
 });
 
 
-/* =========================================
-   FLIP POLAROID
-========================================= */
+/* FLIP */
 
 flipButton.addEventListener("click", function() {
 
@@ -44,9 +43,7 @@ flipButton.addEventListener("click", function() {
 });
 
 
-/* =========================================
-   CLOSE PHOTO
-========================================= */
+/* CLOSE */
 
 function closePhoto() {
 
@@ -57,13 +54,10 @@ function closePhoto() {
 
 }
 
-
-/* CLOSE BUTTON */
-
 closeButton.addEventListener("click", closePhoto);
 
 
-/* CLICK OUTSIDE PHOTO */
+/* CLICK OUTSIDE */
 
 lightbox.addEventListener("click", function(event) {
 
@@ -74,7 +68,7 @@ lightbox.addEventListener("click", function(event) {
 });
 
 
-/* ESCAPE KEY */
+/* ESCAPE */
 
 document.addEventListener("keydown", function(event) {
 
