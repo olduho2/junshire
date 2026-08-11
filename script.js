@@ -21,6 +21,7 @@ polaroids.forEach(function(polaroid) {
         largePhoto.src = image;
         backPhoto.src = backImage;
 
+        /* Always start on front */
         flipCard.classList.remove("flipped");
 
         lightbox.classList.add("open");
@@ -85,4 +86,3 @@ document.addEventListener("keydown", function(event) {
     }
 
 });
-```
