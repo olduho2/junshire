@@ -129,20 +129,14 @@ body {
 ========================================= */
 
 .flip-card-scale {
-    /*
-       The Polaroid ALWAYS stays:
-       width : height = 1 : 1.08
-    */
+    aspect-ratio: 1 / 1;
 
     width: min(
-        70vw,
-        800px,
-        calc(80vh / 1.08)
+        80vw,
+        80vh
     );
 
-    aspect-ratio: 1 / 1.08;
-
-    flex: 0 0 auto;
+    flex: none;
 
     transform: scale(.7);
 
@@ -180,11 +174,9 @@ body {
     inset: 0;
 
     background: #faf9f2;
-
     padding: 4%;
 
-    box-shadow:
-        0 25px 60px rgba(0,0,0,.5);
+    box-shadow: 0 25px 60px rgba(0,0,0,.5);
 
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
