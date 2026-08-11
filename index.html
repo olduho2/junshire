@@ -1,114 +1,64 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Photo Collage</title>
-
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 
 <body>
 
-    <main class="collage">
+<main class="collage">
 
-        <!-- YOUR ILLUSTRATION -->
+    <!-- BACKGROUND -->
+    <img src="images/background.png" class="background" alt="">
 
-        <img
-            src="images/background.png"
-            class="background"
-            alt=""
-        >
+    <!-- POLAROIDS -->
+    <button class="polaroid polaroid-1" data-image="images/photo1.png" data-back="images/back1.png">
+        <img src="images/photo1.png" alt="Photo 1">
+    </button>
 
+    <button class="polaroid polaroid-2" data-image="images/photo2.png" data-back="images/back2.png">
+        <img src="images/photo2.png" alt="Photo 2">
+    </button>
 
-        <!-- POLAROID 1 -->
+    <button class="polaroid polaroid-3" data-image="images/photo3.png" data-back="images/back3.png">
+        <img src="images/photo3.png" alt="Photo 3">
+    </button>
 
-        <button
-            class="polaroid polaroid-1"
-            data-image="images/photo1.png"
-        >
-            <img
-                src="images/photo1.png"
-                alt="Photo 1"
-            >
-        </button>
+    <button class="polaroid polaroid-4" data-image="images/photo4.png" data-back="images/back4.png">
+        <img src="images/photo4.png" alt="Photo 4">
+    </button>
 
-
-        <!-- POLAROID 2 -->
-
-        <button
-            class="polaroid polaroid-2"
-            data-image="images/photo2.png"
-        >
-            <img
-                src="images/photo2.png"
-                alt="Photo 2"
-            >
-        </button>
+</main>
 
 
-        <!-- POLAROID 3 -->
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
 
-        <button
-            class="polaroid polaroid-3"
-            data-image="images/photo3.png"
-        >
-            <img
-                src="images/photo3.png"
-                alt="Photo 3"
-            >
-        </button>
+    <button class="close" id="close">×</button>
 
+    <div class="flip-card" id="flipCard">
 
-        <!-- POLAROID 4 -->
+        <div class="flip-card-front">
+            <img id="largePhoto" src="" alt="">
+        </div>
 
-        <button
-            class="polaroid polaroid-4"
-            data-image="images/photo4.png"
-        >
-            <img
-                src="images/photo4.png"
-                alt="Photo 4"
-            >
-        </button>
-
-    </main>
-
-
-    <!-- FULLSCREEN PHOTO -->
-
-    <div
-        class="lightbox"
-        id="lightbox"
-    >
-
-        <button
-            class="close"
-            id="close"
-        >
-            ×
-        </button>
-
-        <img
-            id="largePhoto"
-            src=""
-            alt=""
-        >
+        <div class="flip-card-back">
+            <img id="backPhoto" src="" alt="">
+        </div>
 
     </div>
 
+    <button class="flip-button" id="flip">Flip</button>
 
-    <script src="script.js"></script>
+</div>
+
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
+```
