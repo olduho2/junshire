@@ -129,9 +129,10 @@ body {
 ========================================= */
 
 .flip-card-scale {
-    width: 500px;
-    max-width: 80vw;
-    aspect-ratio: 1 / 1.08;
+    width: 70vw;
+    height: 80vh;
+    max-width: 900px;
+    max-height: 900px;
 
     transform: scale(.7);
 
