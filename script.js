@@ -5,7 +5,6 @@ const lightbox = document.getElementById("lightbox");
 const largePhoto = document.getElementById("largePhoto");
 const backPhoto = document.getElementById("backPhoto");
 const closeButton = document.getElementById("close");
-const flipButton = document.getElementById("flip");
 const flipCard = document.getElementById("flipCard");
 
 
@@ -36,7 +35,9 @@ polaroids.forEach(function(polaroid) {
 
 /* FLIP */
 
-flipButton.addEventListener("click", function() {
+flipCard.addEventListener("click", function(event) {
+
+    event.stopPropagation();
 
     flipCard.classList.toggle("flipped");
 
