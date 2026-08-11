@@ -1,4 +1,4 @@
-```javascript
+javascript
 const polaroids = document.querySelectorAll(".polaroid");
 const lightbox = document.getElementById("lightbox");
 const largePhoto = document.getElementById("largePhoto");
