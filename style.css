@@ -40,8 +40,8 @@ body {
 
 .polaroid {
     position: absolute;
-    width: 16%;
-    padding: 0.8% 0.8% 3%;
+    width: 224px;
+    padding: 11.2px 11.2px 42px;
     background: #faf9f2;
     border: none;
     box-shadow: 0 8px 15px rgba(0,0,0,.25);
@@ -65,26 +65,26 @@ body {
 ========================================= */
 
 .polaroid-1 {
-    left: 9%;
-    top: 8%;
+    left: 126px;
+    top: 98px;
     transform: rotate(-3deg);
 }
 
 .polaroid-2 {
-    left: 37%;
-    top: 10%;
+    left: 518px;
+    top: 122px;
     transform: rotate(7deg);
 }
 
 .polaroid-3 {
-    right: 15%;
-    top: 8%;
+    right: 210px;
+    top: 98px;
     transform: rotate(-2deg);
 }
 
 .polaroid-4 {
-    right: 8%;
-    top: 26%;
+    right: 112px;
+    top: 364px;
     transform: rotate(3deg);
 }
 
@@ -175,8 +175,8 @@ body {
 
     background: #faf9f2;
 
-    padding: 4%;
-    padding-bottom: 10%;
+    padding: 56px;
+    padding-bottom: 140px;
 
     box-shadow: 0 25px 60px rgba(0,0,0,.5);
 
@@ -242,27 +242,27 @@ body {
 @media (max-width: 700px) {
 
     .polaroid {
-        width: 23%;
+        width: 161px;
     }
 
     .polaroid-1 {
-        left: 7%;
-        top: 7%;
+        left: 49px;
+        top: 49px;
     }
 
     .polaroid-2 {
-        left: 35%;
-        top: 9%;
+        left: 245px;
+        top: 63px;
     }
 
     .polaroid-3 {
-        right: 7%;
-        top: 8%;
+        right: 49px;
+        top: 49px;
     }
 
     .polaroid-4 {
-        right: 5%;
-        top: 26%;
+        right: 35px;
+        top: 182px;
     }
 
 }
