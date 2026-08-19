@@ -71,9 +71,9 @@ body {
 }
 
 .polaroid-2 {
-    left: 518px;
+    left: 480px;
     top: 122px;
-    transform: rotate(7deg);
+    transform: rotate(-7deg);
 }
 
 .polaroid-3 {
