@@ -64,12 +64,6 @@ body {
    POLAROID POSITIONS
 ========================================= */
 
-.polaroid-1 {
-    left: 126px;
-    top: 152px;
-    transform: rotate(-3deg);
-}
-
 .polaroid-2 {
     left: 435px;
     top: 120px;
