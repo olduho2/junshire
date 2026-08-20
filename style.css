@@ -77,14 +77,14 @@ body {
 }
 
 .polaroid-3 {
-    right: 115px;
+    right: 120px;
     top: 210px;
     transform: rotate(4deg);
 }
 
 .polaroid-4 {
     right: 55px;
-    top: 700px;
+    top: 600px;
     transform: rotate(10deg);
 }
 
